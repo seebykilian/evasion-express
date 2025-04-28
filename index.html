@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évasion Express</title>
+    <link id="favicon" rel="icon" href="./images/dark-favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="left">
+            <a href="#destinations"><span class="material-icons">map</span> Destinations</a>
+            <a href="#avis"><span class="material-icons">thumb_up</span> Avis</a>
+        </div>
+        <img src="./images/light-logo.png" id="logo" alt="logo" class="logo">
+        <div class="right">
+            <button id="cta" class="cta-button" onclick="window.location='#destinations'">
+                <span class="material-icons airplane-icon">flight_takeoff</span>
+                Commencer l’aventure
+            </button>
+            <button class="toggle-theme" id="theme-toggle">
+                <span class="material-icons" id="theme-icon">brightness_6</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <div class="cta-container">
+                <img src="./images/light-favicon.png" alt="logo" class="cta-logo">
+                <p>Un voyage express. Une évasion totale.</p>
+                <button class="cta-button" onclick="window.location='#destinations'">
+                    <span class="material-icons">cottage</span>
+                    Découvrir les destinations
+                </button>
+            </div>
+        </section>
+
+        <section id="destinations">
+            <h2>Nos <span class="highlight-primary">destinations</span> disponibles</h2>
+            <div class="cards-container">
+              <button class="nav-button left-button">&#10094;</button>
+              <div class="cards">
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/paris-1.jpg" alt="Paris">
+                    <img src="./images/destinations/paris-2.jpg" alt="Paris">
+                    <img src="./images/destinations/paris-3.jpg" alt="Paris">
+                  </div>
+                  <div class="card-content">
+                    <h3>Paris</h3>
+                    <p>Explorez la ville lumière et ses monuments iconiques.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">199€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/new-york-1.jpg" alt="New York">
+                    <img src="./images/destinations/new-york-2.jpg" alt="New York">
+                    <img src="./images/destinations/new-york-3.jpg" alt="New York">
+                  </div>
+                  <div class="card-content">
+                    <h3>New York</h3>
+                    <p>Vivez l'expérience de la ville qui ne dort jamais.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">499€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/tokyo-1.jpg" alt="Tokyo">
+                    <img src="./images/destinations/tokyo-2.jpg" alt="Tokyo">
+                    <img src="./images/destinations/tokyo-3.jpg" alt="Tokyo">
+                  </div>
+                  <div class="card-content">
+                    <h3>Tokyo</h3>
+                    <p>Imprégnez-vous de la culture traditionnelle du Japon.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">599€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/rome-1.jpg" alt="Rome">
+                    <img src="./images/destinations/rome-2.jpg" alt="Rome">
+                    <img src="./images/destinations/rome-3.jpg" alt="Rome">
+                  </div>
+                  <div class="card-content">
+                    <h3>Rome</h3>
+                    <p>Découvrez l'histoire et la gastronomie italienne.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">239€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/sydney-1.jpg" alt="Sydney">
+                    <img src="./images/destinations/sydney-2.jpg" alt="Sydney">
+                    <img src="./images/destinations/sydney-3.jpg" alt="Sydney">
+                  </div>
+                  <div class="card-content">
+                    <h3>Sydney</h3>
+                    <p>Explorez les plages et la vie urbaine australienne.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">699€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/rio-1.jpg" alt="Rio de Janeiro">
+                    <img src="./images/destinations/rio-2.jpg" alt="Rio de Janeiro">
+                    <img src="./images/destinations/rio-3.jpg" alt="Rio de Janeiro">
+                  </div>
+                  <div class="card-content">
+                    <h3>Rio de Janeiro</h3>
+                    <p>Profitez du carnaval et des plages brésiliennes.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">549€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/caire-1.jpg" alt="Le Caire">
+                    <img src="./images/destinations/caire-2.jpg" alt="Le Caire">
+                    <img src="./images/destinations/caire-3.jpg" alt="Le Caire">
+                  </div>
+                  <div class="card-content">
+                    <h3>Le Caire</h3>
+                    <p>Découvrez les mystères de l'Égypte ancienne.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">279€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/cape-town-1.jpg" alt="Cape Town">
+                    <img src="./images/destinations/cape-town-2.jpg" alt="Cape Town">
+                    <img src="./images/destinations/cape-town-3.jpg" alt="Cape Town">
+                  </div>
+                  <div class="card-content">
+                    <h3>Cape Town</h3>
+                    <p>Admirez la beauté naturelle de l'Afrique du Sud.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">469€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/barcelone-1.jpg" alt="Barcelone">
+                    <img src="./images/destinations/barcelone-2.jpg" alt="Barcelone">
+                    <img src="./images/destinations/barcelone-3.jpg" alt="Barcelone">
+                  </div>
+                  <div class="card-content">
+                    <h3>Barcelone</h3>
+                    <p>Profitez des chefs-d'œuvre de Gaudí et de la vie nocturne.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">189€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="card">
+                  <div class="image-carousel">
+                    <img src="./images/destinations/dubai-1.jpg" alt="Dubai">
+                    <img src="./images/destinations/dubai-2.jpg" alt="Dubai">
+                    <img src="./images/destinations/dubai-3.jpg" alt="Dubai">
+                  </div>
+                  <div class="card-content">
+                    <h3>Dubai</h3>
+                    <p>Explorez la modernité et le luxe des Émirats arabes unis.</p>
+                    <div class="card-bottom">
+                      <div class="price">À partir de <span class="highlight-secondary">579€</span></div>
+                      <button class="btn-cta">Réserver</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="nav-button right-button">&#10095;</button>
+            </div>
+          </section>          
+
+        <section id="avis">
+            <h2>Les <span class="highlight-secondary">avis</span> de nos voyageurs</h2>
+            <div class="avis-container">
+                <div class="avis-card">
+                    <div class="avis-photo">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Clara">
+                    </div>
+                    <div class="avis-content">
+                        <span class="quote">“</span>
+                        <p>Évasion Express a complètement dépassé nos attentes. Chaque détail était soigneusement
+                            organisé, ce qui a rendu notre aventure absolument inoubliable.</p>
+                        <span class="auteur">Clara</span>
+                    </div>
+                </div>
+                <div class="avis-card">
+                    <div class="avis-photo">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Marc">
+                    </div>
+                    <div class="avis-content">
+                        <span class="quote">“</span>
+                        <p>Des paysages incroyables, des activités variées et une logistique parfaite. Je recommande à
+                            100% !</p>
+                        <span class="auteur">Marc</span>
+                    </div>
+                </div>
+                <div class="avis-card">
+                    <div class="avis-photo">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophie">
+                    </div>
+                    <div class="avis-content">
+                        <span class="quote">“</span>
+                        <p>Le service client a été très réactif et à l'écoute. On se sent vraiment accompagné du début à
+                            la fin.</p>
+                        <span class="auteur">Sophie</span>
+                    </div>
+                </div>
+                <div class="avis-card">
+                    <div class="avis-photo">
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Lucas">
+                    </div>
+                    <div class="avis-content">
+                        <span class="quote">“</span>
+                        <p>J'ai adoré le séjour proposé par Évasion Express ! Une expérience immersive, culturelle et
+                            humaine incroyable.</p>
+                        <span class="auteur">Lucas</span>
+                    </div>
+                </div>
+                <div class="avis-card">
+                    <div class="avis-photo">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Amélie">
+                    </div>
+                    <div class="avis-content">
+                        <span class="quote">“</span>
+                        <p>Les souvenirs que j'ai créés grâce à cette équipe resteront gravés en moi pour toujours.
+                            Merci !</p>
+                        <span class="auteur">Amélie</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Envie de nous <span class="highlight-primary">contacter</span> ?</h2>
+            <form class="contact-form" id="contactForm">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Adresse mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="email">Numéro de téléphone</label>
+                <input type="phone" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="./images/light-logo.png" id="logoFooter" alt="Logo Évasion Express">
+        </div>
+        <div class="footer-links">
+            <a href="#accueil"><span class="material-icons">home</span> Accueil</a>
+            <a href="#destinations"><span class="material-icons">map</span> Destinations</a>
+            <a href="#avis"><span class="material-icons">thumb_up</span> Avis</a>
+            <a href="#contact"><span class="material-icons">email</span> Contact</a>
+        </div>
+        <div class="contact-info">
+            <span>Adresse mail : contact@evasion-express.com</span>
+            <span>Numéro de téléphone : +33 1 23 45 67 89</span>
+            <span>Adresse postale : 14 Boulevard du Temple, 75011 Paris, France</span>
+        </div>
+        <div class="social-icons">
+            <a href="#"><span class="material-icons">facebook</span></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
